@@ -13,6 +13,8 @@ d2 = 0
 
 # sets the value in arr[d1][d2] to 'A'
 arr[d1.to_f][d2.to_f] = 'A'
+
+# puts a '#' int the position arr[2][2].
 arr[2][2] = '#'
 
 #repeat indefinately
