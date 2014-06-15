@@ -1,8 +1,9 @@
 This project is mainly for people that want to start experimenting with open source. So don't worry if you make a mess, feel free to break everything if you want :)
 
 <h2> Idea </h2>
-The idea is to make a "game" with the main character being <code> A </code>.
-It is just one main file and has no classes, which is to keep it simple at the beginning but they will need to be added one day.
+The idea is to make a "game" with the main character being <code> A </code> that needs to eat all the <code> * </code> in the board before passing to the next level, but has to be careful not to get eaten by <code> F </code> (subject to change).
+For the moment the project consists of just one main file and has no classes, which is to keep it simple at the beginning but they will need to be added.
+The Story is about RubyMan that goes to explore an ancient temple and gets trapped inside, to get out he'll need to clear all the floors (levels) of the temple, but he has to be careful not to get eaten by "the mummy?".
 
 
 <h2> What it does for the moment </h2>
@@ -10,8 +11,9 @@ For the moment what it supports is simple movement (using the <code> WASD </code
 
 <h2>ToDo</h2>
   - Make it unnecessary for the user to have to press <code> ENTER </code> each time it gives a movement instruction
-  - Think of a story or idea to make the game great 
-  - Make a way for the user to make their own grids, custom position of #s (maybe by entering the grid line by line?)
+  - Make a way to easely print different levels (maybe by reading line by line a text file?)
+  - Create a subclass for the enemy, inheriting from the 'Character' class (in the future it will include some AI)
+  - Create a class for the board with methods for printing
   - Give it some COLORS! (the colorize gem sound like a nice idea for this :)  )
   - Make the grid display with a nicer formatting 
 
