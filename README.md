@@ -13,7 +13,6 @@ For the moment what it supports is simple movement (using the <code> WASD </code
   - Make it unnecessary for the user to have to press <code> ENTER </code> each time it gives a movement instruction
   - Make a way to easely print different levels (maybe by reading line by line a text file?)
   - Create a subclass for the enemy, inheriting from the 'Character' class (in the future it will include some AI)
-  - Create a class for the board with methods for printing
   - Give it some COLORS! (the colorize gem sound like a nice idea for this :)  )
   - Make the grid display with a nicer formatting 
 
