@@ -9,10 +9,11 @@ class Player < Character
 		set_board(board)
 		draw_in_board('A')
 	end
+	
 
 	# accepts user input and moves
 	def move(key)
-	  get_board[get_x_pos][get_y_pos] = '*' # sets the current position to * before moving
+	  get_board[get_y_pos][get_x_pos] = '*' # sets the current position to * before moving
 	  case key 
      		when "w"
 	  		move_up
