@@ -14,6 +14,7 @@ class Board
       puts
       o += 1
     end
+    puts "\nPress 'q' to exit or the WASD keys to move"
   end
 
   # returns the current board array

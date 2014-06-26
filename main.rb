@@ -3,6 +3,8 @@
 require_relative 'player'
 require_relative 'Board'
 
+require 'io/console'
+
 # the size of the array will be n x n
 puts "What size will the board be?"
 n = gets.chomp.to_i
@@ -23,9 +25,13 @@ while true do
  brd.draw() # draws the board
  
  # gets an input from the user correponding to the direction
- tt = gets.chomp
+ tt = STDIN.getch
  
-  
- ply.move(tt)
+ if tt == 'q'
+ 	system('clear')
+ 	break
+ else
+ 	ply.move(tt)
+ end
  
 end # end the loop
