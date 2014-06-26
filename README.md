@@ -10,7 +10,6 @@ The Story is about RubyMan that goes to explore an ancient temple and gets trapp
 For the moment what it supports is simple movement (using the <code> WASD </code> keys on the keyboard) and simple collision (<code> A </code> doesn't move to spaces where there is a <code> # </code>)
 
 <h2>ToDo</h2>
-  - Make it unnecessary for the user to have to press <code> ENTER </code> each time it gives a movement instruction
   - Make a way to easely print different levels (maybe by reading line by line a text file?)
   - Create a subclass for the enemy, inheriting from the 'Character' class (in the future it will include some AI)
   - Give it some COLORS! (the colorize gem sound like a nice idea for this :)  )
