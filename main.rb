@@ -18,6 +18,9 @@ ply = Player.new(0,0,brd.get_board())
 # puts a '#' int the position [2][2].
 brd.set_obstacle(2,2)
 
+# allows board to access information about player
+brd.set_player(ply)
+
 #repeat indefinately
 while true do
  system("clear") # clears the terminal every loop (to make it nice :D ) 
