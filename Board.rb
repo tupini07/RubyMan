@@ -4,7 +4,7 @@ require 'win32console' # colors wouldn't appear without it
 class Board
 
   @board
-  @player
+  PLAYER_COLOR_CONST = :yellow
   WALL_COLOR_CONST = :red
   STAR_COLOR_CONST = :green
 
@@ -24,7 +24,7 @@ class Board
         # color the player icon
         # creates spacing between each item so it looks nicer
         if @board[row][col] == 'A'
-          print @board[row][col].colorize(@player.get_color) + '  ' 
+          print @board[row][col].colorize(PLAYER_COLOR_CONST) + '  ' 
         elsif @board[row][col] == '#'
           print @board[row][col].colorize(WALL_COLOR_CONST) + '  '
         elsif @board[row][col] == '*'
@@ -56,8 +56,5 @@ class Board
     @board[y][x] = '#'
   end
 
-  def set_player(player)
-    @player = player
-  end
 
 end
