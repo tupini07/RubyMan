@@ -5,18 +5,46 @@ require_relative 'Board'
 
 require 'io/console'
 
-# the size of the array will be n x n
-puts "What size will the board be?"
-n = gets.chomp.to_i
+contentArray = []  # start with an empty array
+row = 0
+col = 0
+if ARGV[0]
+	File.open(ARGV[0]).each_line do |line|
+	  contentArray.push line
+	end
+	result = false
+	contentArray.size.times do 
+	  col = 0
+	  contentArray[row].size.times do 
+	    if contentArray[row][col] == 'A'
+	      result = true
+	      break
+	    end
+	    col += 1
+	  end
+	  break if result == true
+	  row += 1
+	end
 
-# creates a board
-brd = Board.new(n)
+	brd = Board.new(0)
+	brd.set_board(contentArray)
+	ply = Player.new(col,row,brd.get_board())
+else
 
-# creates a player
-ply = Player.new(0,0,brd.get_board())
+	# the size of the array will be n x n
+	puts "What size will the board be?"
+	n = gets.chomp.to_i
 
-# puts a '#' int the position [2][2].
-brd.set_obstacle(2,2)
+	# creates a board
+	brd = Board.new(n)
+
+	# creates a player
+	ply = Player.new(0,0,brd.get_board())
+
+	# puts a '#' int the position [2][2].
+	brd.set_obstacle(2,2)
+end
+
 
 #repeat indefinately
 while true do
