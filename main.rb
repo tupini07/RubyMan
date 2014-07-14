@@ -5,29 +5,32 @@ require_relative 'Board'
 
 require 'io/console'
 
-contentArray = []  # start with an empty array
+levelArray = []
 row = 0
 col = 0
 if ARGV[0]
 	File.open(ARGV[0]).each_line do |line|
-	  contentArray.push line
+	  levelArray.push line
 	end
-	result = false
-	contentArray.size.times do 
+
+	# find the player start location so it can be set when creating player object
+	foundPlayer = false
+	levelArray.size.times do 
 	  col = 0
-	  contentArray[row].size.times do 
-	    if contentArray[row][col] == 'A'
-	      result = true
+	  levelArray[row].size.times do 
+	    if levelArray[row][col] == 'A'
+	      foundPlayer = true
 	      break
 	    end
 	    col += 1
 	  end
-	  break if result == true
+	  break if foundPlayer == true
 	  row += 1
 	end
 
+	# creates board with empty array, sets board after
 	brd = Board.new(0)
-	brd.set_board(contentArray)
+	brd.set_board(levelArray)
 	ply = Player.new(col,row,brd.get_board())
 else
 
