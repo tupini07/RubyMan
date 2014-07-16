@@ -1,7 +1,9 @@
 require_relative 'character'
 
+
 class Player < Character
 	
+
 	# sets the initial position of the player, by sending parameters
 	def initialize( x, y, board )
 		set_x_position(x)
@@ -28,6 +30,7 @@ class Player < Character
  	  end # ends case
  	  draw_in_board('A') # sets the current position to A
 	end
+
 
 end
 
