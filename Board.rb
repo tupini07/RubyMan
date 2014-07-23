@@ -29,6 +29,8 @@ class Board
           print @board[row][col].colorize(WALL_COLOR_CONST) + '  '
         elsif @board[row][col] == '*'
           print @board[row][col].colorize(STAR_COLOR_CONST) + '  '
+        elsif @board[row][col] == ' '
+          print @board[row][col] + '  '
         end
         col += 1
 
