@@ -1,42 +1,40 @@
 #! /usr/bin/ruby
 
-require_relative 'player'
-require_relative 'Board'
-require_relative 'LoadLevel'
+['player', 'Board', 'loadLevel'].each{|f|require_relative f}
 
 require 'io/console'
 
 brd = nil
 ply = nil
 
-# if CL argument exists
+# If CL argument exists
 if ARGV[0]
-	# creates board and player from level passed through CL arguments
+	# Creates board and player from level passed through CL arguments
 	brd, ply = load_level_from_args
 else
 
-	# the size of the array will be n x n
+	# The size of the array will be n x n
 	puts "What size will the board be?"
 	n = gets.chomp.to_i
 
-	# creates a board
+	# Creates a board
 	brd = Board.new(n)
 
-	# creates a player
+	# Creates a player
 	ply = Player.new(0,0,brd.get_board())
 
-	# puts a '#' int the position [2][2].
+	# Puts a '#' int the position [2][2].
 	brd.set_obstacle(2,2)
 end
 
+#Repeat indefinately
 
-#repeat indefinately
 while true do
- system("clear") # clears the terminal every loop (to make it nice :D ) 
+ system("clear")       # Clears the terminal every loop (to make it nice :D ) 
  
- brd.draw() # draws the board
+ brd.draw()            # Draws the board
  
- # gets an input from the user correponding to the direction
+ # Gets an input from the user correponding to the direction
  tt = STDIN.getch
  
  if tt == 'q'
@@ -46,4 +44,4 @@ while true do
  	ply.move(tt)
  end
  
-end # end the loop
+end                    # End the loop
