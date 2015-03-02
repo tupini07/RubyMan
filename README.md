@@ -29,7 +29,7 @@ Remember that you don't need to be an expert to help!!
 <h2>How to Start</h2>
 Before you can start you need to have ruby installed on your machine if you don't already have it. Check out [Ruby-Lang](https://www.ruby-lang.org/) to see the instructions on how to install it on your specific operating system.
 
-Then from the terminal you just navigate to the project's folder and execute it by writing <code> ruby main.rb </code>. To edit the main file you can use whatever text editor you like, even notepad!
+Then from the terminal you just navigate to the project's folder and execute it by writing <code> ruby Main.rb </code>. To edit the main file you can use whatever text editor you like, even notepad!
 
 
   <h5>Happy Coding!</h5>
