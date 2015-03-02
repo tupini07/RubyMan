@@ -1,4 +1,4 @@
-require_relative 'character'
+require_relative 'Character'
 
 class Player < Character
 

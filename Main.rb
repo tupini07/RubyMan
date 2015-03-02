@@ -1,6 +1,6 @@
 #! /usr/bin/ruby
 
-['player', 'Board', 'loadLevel'].each{|f|require_relative f}
+['Player', 'Board', 'LoadLevel'].each{|f|require_relative f}
 
 require 'io/console'
 

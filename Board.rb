@@ -1,4 +1,4 @@
-['colorize', 'win32console'].each{|g| require g}
+require 'colorize'
 
 class Board
 
