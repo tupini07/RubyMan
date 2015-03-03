@@ -10,7 +10,7 @@ For the moment what it supports is simple movement (using the <code> WASD </code
 
 <h2>ToDo</h2>
   - Create a subclass for the enemy, inheriting from the 'Character' class (in the future it will include some AI)
-  - Maybe put some points? Like some '*' that when collected give points
+  - Make a specialized class to handle statistics (score, time, etc)
 
 For the moment that is what is important, however this list will be updated regularly
 
