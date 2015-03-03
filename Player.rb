@@ -33,7 +33,10 @@ class Player < Character
   
   def eatStar
     @score += 1 if get_board[get_y_pos][get_x_pos] == '*'
-    puts "Score : " + @score.to_s
+  end
+
+  def get_score
+	  @score
   end
 
 end

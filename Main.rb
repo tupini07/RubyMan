@@ -34,6 +34,9 @@ while true do
  
  brd.draw()            # Draws the board
  
+ #Prints score, posibly make a special class to handle statistics?
+ puts "Score: " + ply.get_score.to_s 
+
  # Gets an input from the user correponding to the direction
  tt = STDIN.getch
  
