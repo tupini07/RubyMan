@@ -2,7 +2,6 @@ This project is mainly for people that want to start experimenting with open sou
 
 <h2> Idea </h2>
 The idea is to make a "game" with the main character being <code> A </code> that needs to eat all the <code> * </code> in the board before passing to the next level, but has to be careful not to get eaten by <code> F </code> (subject to change).
-For the moment the project consists of just one main file and has no classes, which is to keep it simple at the beginning but they will need to be added.
 The Story is about RubyMan that goes to explore an ancient temple and gets trapped inside, to get out he'll need to clear all the floors (levels) of the temple, but he has to be careful not to get eaten by "the mummy?".
 
 
