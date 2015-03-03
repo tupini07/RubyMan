@@ -2,7 +2,6 @@ This project is mainly for people that want to start experimenting with open sou
 
 <h2> Idea </h2>
 The idea is to make a "game" with the main character being <code> A </code> that needs to eat all the <code> * </code> in the board before passing to the next level, but has to be careful not to get eaten by <code> F </code> (subject to change).
-For the moment the project consists of just one main file and has no classes, which is to keep it simple at the beginning but they will need to be added.
 The Story is about RubyMan that goes to explore an ancient temple and gets trapped inside, to get out he'll need to clear all the floors (levels) of the temple, but he has to be careful not to get eaten by "the mummy?".
 
 
@@ -29,7 +28,7 @@ Remember that you don't need to be an expert to help!!
 <h2>How to Start</h2>
 Before you can start you need to have ruby installed on your machine if you don't already have it. Check out [Ruby-Lang](https://www.ruby-lang.org/) to see the instructions on how to install it on your specific operating system.
 
-Then from the terminal you just navigate to the project's folder and execute it by writing <code> ruby main.rb </code>. To edit the main file you can use whatever text editor you like, even notepad!
+Then from the terminal you just navigate to the project's folder and execute it by writing <code> ruby Main.rb </code>. To edit the main file you can use whatever text editor you like, even notepad!
 
 
   <h5>Happy Coding!</h5>
