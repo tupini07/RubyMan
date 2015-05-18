@@ -26,7 +26,7 @@ For the moment that is what is important, however this list will be updated regu
 Remember that you don't need to be an expert to help!!
 
 <h2>How to Start</h2>
-Before you can start you need to have ruby installed on your machine if you don't already have it. Check out [Ruby-Lang](https://www.ruby-lang.org/) to see the instructions on how to install it on your specific operating system.
+This program is developed on Ubuntu Linux and has been verified on the Mac. It should run fine on Windows as well. Before you can start you need to have ruby installed on your machine if you don't already have it. Check out [Ruby-Lang](https://www.ruby-lang.org/) to see the instructions on how to install it on your specific operating system. Requires Ruby version 2.0 or higher.
 
 Then from the terminal you just navigate to the project's folder and execute it by writing <code> ruby Main.rb </code>. To edit the main file you can use whatever text editor you like, even notepad!
 
