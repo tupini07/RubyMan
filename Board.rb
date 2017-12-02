@@ -3,6 +3,7 @@ require 'colorize'
 class Board
 
   @board
+  @star_count
   PLAYER_COLOR_CONST = :yellow
   WALL_COLOR_CONST = :red
   STAR_COLOR_CONST = :green
@@ -11,6 +12,7 @@ class Board
   
   def initialize(size)
     @board = Array.new(size) {Array.new(size){ '*' } }
+	@star_count = size*size -2 #only temporary. should be dynamically counted during level build. -2 because on the default board you override two with a wall and the player.
   end
 
   # Draw board in terminal
@@ -49,11 +51,22 @@ class Board
     @board
   end
 
+  #gets the total number of stars originally on the board
+  def star_count
+	@star_count
+  end
+  
+  #sets the total number of stars originally on the board
+  def star_count=(count)
+	@star_count = count
+  end
+  
   # Sets the board array
   
   def set_board(board)
     @board = board
   end
+  
 
   # This method will be removed once the boards are loaded from an external file
 

@@ -37,6 +37,12 @@ while true do
  #Prints score, posibly make a special class to handle statistics?
  puts "Score: " + ply.get_score.to_s 
 
+ #checks if the player has won
+ if ply.get_score == brd.star_count
+    puts "RubyMan ate all the stars! You win!"
+    break
+ end
+	
  # Gets an input from the user correponding to the direction
  tt = STDIN.getch
  
